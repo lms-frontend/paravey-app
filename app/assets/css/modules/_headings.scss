@@ -1,0 +1,19 @@
+.sec-heading{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  &:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    background: $light-green;
+    height: 2px;
+    @include v-center;
+    z-index: -1;
+    margin-left: 10px;
+  }
+}
