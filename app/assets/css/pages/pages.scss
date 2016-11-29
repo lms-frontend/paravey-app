@@ -132,7 +132,7 @@ section.hero-section{
     }
     .dob{
       .form-group{
-        margin-bottom: 5
+        margin-bottom: 5px
       }
     }
     form{
@@ -141,7 +141,7 @@ section.hero-section{
         position: absolute;
         left: 50%;
         @include transform(translate(-50%,-50%));
-        margin-top: 15px; 
+        margin-top: 15px;
       }
     }
   }//hero-form login

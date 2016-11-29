@@ -2525,7 +2525,7 @@ section.hero-section {
     .hero-form.register .form-horizontal {
       margin: 0 5px; }
     .hero-form.register .dob .form-group {
-      margin-bottom: 5; }
+      margin-bottom: 5px; }
     .hero-form.register form button.reg-btn {
       position: absolute;
       left: 50%;
