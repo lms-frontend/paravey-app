@@ -43,9 +43,11 @@ section.hero-section{
     .hero-left{
       color: #fff;
       h1{
+        letter-spacing: 2px;
         font-size: 2.75em;
         text-transform: uppercase;
         margin-bottom: 30px;
+        line-height: 1.5;
         a{
           color: #fff;
           text-decoration: none;
@@ -56,19 +58,23 @@ section.hero-section{
       ul{
         list-style-type: none;
         padding: 0;
+        font-family: $futura;
+        letter-spacing: 3px;
         li{
           font-size: 2.5em;
           text-transform: uppercase;
           margin: 20px 5px;
           span.icon{
-            padding-right: 10px;
+            margin-right: 20px;
             i.fa{
               color: #fff;
               font-size: 16px;
               background: $orange;
-              padding: 10px;
+              @include size(45px);
+              line-height: 45px;
+              text-align: center;
               @include border-radius(50%);
-              vertical-align: middle;
+              vertical-align: text-bottom;
             }
           }
         }
@@ -87,9 +93,10 @@ section.hero-section{
   @include box-shadow(10px, 10px, 5px, rgba(0, 0, 0, 0.1));
   border: solid 1px $light-green;
   h1.title{
+    letter-spacing: 1.75px;
     text-align: center;
-    font-size: 2em;
-    font-weight: 600;
+    font-size: 2.15em;
+    font-weight: 400;
     margin: 15px 0;
   }
   input[type=text],input[type=email],input[type=password],input[type=phone]{
@@ -137,10 +144,15 @@ section.hero-section{
     }
     form{
       // position: relative;
-      button.reg-btn{
+      button.reg-btn.center{
         position: absolute;
         left: 50%;
         @include transform(translate(-50%,-50%));
+        margin-top: 15px;
+      }
+      button.reg-btn.right{
+        position: relative;
+        top: 100px;
         margin-top: 15px;
       }
     }
@@ -149,7 +161,23 @@ section.hero-section{
 //hero-form ends
 
 
-
+.hero-form .ques{
+  text-align: center;
+  label{
+    font-size: 2em;
+    font-weight: 600;
+    color: $blue;
+    &:before{
+      margin-top: 12px;
+    }
+    &:after{
+      margin-top: 12px;
+    }
+  }
+  .radio {
+    margin: 30px 25px;
+  }
+}
 /*----------------section.hero-section ends-------------------*/
 
 
@@ -166,8 +194,10 @@ section.our-partners{
     .partner{
       margin: 10px auto;
       .p-title{
+        font-family: $primary-font;
         margin-top: 25px;
         font-size: 1.125em;
+        letter-spacing: 1.2px;
       }
     }
   }

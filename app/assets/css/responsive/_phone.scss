@@ -29,21 +29,24 @@
     .hero-left{
       padding: 0;
       h1{
-        font-size: 2.5em;
+        font-size: 2em;
         line-height: 1.5;
       }
       ul{
         li{
-          font-size: 1.8em;
+          font-size: 1.25em;
           margin: 5px 0px;
           span.icon{
             margin-right: 10px;
             i.fa{
+              // padding: 7px;
+              @include size(35px);
+              line-height: 35px;
               vertical-align: middle;
             }
           }
-        }
       }
+    }
     }
   }//hero-section
 
