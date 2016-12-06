@@ -68,7 +68,7 @@ section.hero-section{
             margin-right: 20px;
             i.fa{
               color: #fff;
-              font-size: 16px;
+              font-size: 18px;
               background: $orange;
               @include size(45px);
               line-height: 45px;
@@ -99,7 +99,7 @@ section.hero-section{
     font-weight: 400;
     margin: 15px 0;
   }
-  input[type=text],input[type=email],input[type=password],input[type=phone]{
+  input[type=text],input[type=email],input[type=number],input[type=password],input[type=phone]{
     border: 0;
     background: $input-bg;
     box-shadow: none;
@@ -115,12 +115,16 @@ section.hero-section{
     padding: 0 10px;
   }
   label{
-    font-size: .9em;
-    letter-spacing: .75px;
+    font-size: .95em;
+    font-weight: 400;
+    font-family: $futura;
+    letter-spacing: 1px;
     margin: 5px 0 0 7px;
     display: block;
     a{
       color: $link-color;
+      font-family: $primary-font;
+      font-weight: 600;
     }
   }
   &.login{
@@ -165,8 +169,8 @@ section.hero-section{
   text-align: center;
   label{
     font-size: 2em;
-    font-weight: 600;
     color: $blue;
+    letter-spacing: 2px;
     &:before{
       margin-top: 12px;
     }

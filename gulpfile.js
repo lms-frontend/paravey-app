@@ -5,9 +5,6 @@ var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var sourcemaps = require('gulp-sourcemaps');
 
-/**
- * Wait for jekyll-build, then launch the Server
- */
 
 gulp.task('browser-sync', ['sass'], function() {
     browserSync({
@@ -16,12 +13,12 @@ gulp.task('browser-sync', ['sass'], function() {
         },
         // port: 8081,
         notify: false
+        //  ghostMode: {
+        //     links: false
+        // }
     });
 });
 
-/**
- * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
- */
 gulp.task('sass', function () {
     return gulp.src('app/assets/css/main.scss')
         .pipe(sourcemaps.init())

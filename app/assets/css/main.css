@@ -2719,6 +2719,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Futura", sans-serif; }
 
+.btn[disabled] {
+  opacity: 0.8 !important; }
+
 .btn-full {
   display: block;
   width: 100%;
@@ -2764,16 +2767,17 @@ h1, h2, h3, h4, h5, h6 {
 .btn-red {
   background: #f06f73;
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  outline: 0 !important; }
+  letter-spacing: 2px;
+  outline: 0 !important;
+  font-family: "Futura", sans-serif; }
 
 .btn.btn-lg2 {
   font-size: 1.65em;
   padding: 10px 30px; }
 
-.btn.reg-btn:hover {
+.btn.reg-btn:hover, .btn.reg-btn:focus, .btn.reg-btn:active {
   color: #fff; }
 
 .sec-heading {
@@ -2796,6 +2800,22 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-50%);
     z-index: -1;
     margin-left: 10px; }
+
+.errMsz {
+  font-size: 12px;
+  color: #ea292f;
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  white-space: nowrap; }
+
+.greenb {
+  -webkit-box-shadow: 0 0 0 1px green inset !important;
+          box-shadow: 0 0 0 1px green inset !important; }
+
+.redb {
+  -webkit-box-shadow: 0 0 0 1px red inset !important;
+          box-shadow: 0 0 0 1px red inset !important; }
 
 header.main-header nav.navbar {
   min-height: 60px;
@@ -2850,7 +2870,7 @@ section.hero-section {
           margin-right: 20px; }
           section.hero-section .hero-left ul li span.icon i.fa {
             color: #fff;
-            font-size: 16px;
+            font-size: 18px;
             background: #f06f73;
             height: 45px;
             width: 45px;
@@ -2877,7 +2897,7 @@ section.hero-section {
     font-size: 2.15em;
     font-weight: 400;
     margin: 15px 0; }
-  .hero-form input[type=text], .hero-form input[type=email], .hero-form input[type=password], .hero-form input[type=phone] {
+  .hero-form input[type=text], .hero-form input[type=email], .hero-form input[type=number], .hero-form input[type=password], .hero-form input[type=phone] {
     border: 0;
     background: #e7e5e6;
     -webkit-box-shadow: none;
@@ -2892,12 +2912,16 @@ section.hero-section {
     outline: 0;
     padding: 0 10px; }
   .hero-form label {
-    font-size: .9em;
-    letter-spacing: .75px;
+    font-size: .95em;
+    font-weight: 400;
+    font-family: "Futura", sans-serif;
+    letter-spacing: 1px;
     margin: 5px 0 0 7px;
     display: block; }
     .hero-form label a {
-      color: #394da1; }
+      color: #394da1;
+      font-family: "Muli", sans-serif;
+      font-weight: 600; }
   .hero-form.login {
     max-width: 350px; }
     .hero-form.login .btn-full {
@@ -2926,8 +2950,8 @@ section.hero-section {
   text-align: center; }
   .hero-form .ques label {
     font-size: 2em;
-    font-weight: 600;
-    color: #3eb4e2; }
+    color: #3eb4e2;
+    letter-spacing: 2px; }
     .hero-form .ques label:before {
       margin-top: 12px; }
     .hero-form .ques label:after {

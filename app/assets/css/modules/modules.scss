@@ -1,2 +1,18 @@
 @import "buttons";
 @import "headings";
+
+.errMsz{
+    font-size: 12px;
+    color: #ea292f;
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    white-space: nowrap;
+  }
+
+.greenb{
+  box-shadow: 0 0 0 1px green inset!important;
+}
+.redb{
+  box-shadow: 0 0 0 1px red inset!important;
+}
