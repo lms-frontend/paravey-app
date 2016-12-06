@@ -40,6 +40,7 @@ myApp.controller('RegisterCtrl', function($scope, $http){
     //         'Accept': 'application/json'
     //       }
     //   }
+    //http://rest.learncode.academy/api/johnbob/friends
      $http.post('http://183.182.84.197/paravey/webservices/v1/api/register', regData)
      .then(
        function(response){
